@@ -29,6 +29,14 @@ pipeline {
                 sh 'npm test'
             }
         }
+
+	stage('deoly') {
+            steps {
+                echo 'deoply...'
+                sh 'scp  -o xxxxxxxxx'
+            }
+        }
+
     }
 
 }
